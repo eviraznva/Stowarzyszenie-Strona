@@ -1,6 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 10px !important;
+}
+
 nav{
     background:linear-gradient(-45deg, rgba(34, 34, 156, 0.863), rgba(42, 155, 170, 0.795));
 }
+
+.img-brand{
+    width: 10% !important;
+}
+
+.font-size-nav{
+    font-size: 2.75rem !important;
+}
+
+.nav-link.active{
+    color: rgba(255,255,255,.60) !important;
+}
+
+.nav-link.active:hover{
+    border-bottom: 5px solid transparent !important;
+}
+
+.nav-link + .nav-link {
+    margin-left: 1.75rem !important;
+}
+
+.nav-link{
+    color:white !important;
+    border-bottom: 5px solid transparent;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-link:hover {
+    color: rgba(255,255,255,.60) !important;
+    border-bottom: 5px solid blue;
+}
+
+.card{
+    font-size: 1.5rem !important;
+}
+
+.card-title{
+    font-size: 2rem !important;
+}
+
 footer{
     background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 2048px){
+    .font-size-nav{
+        font-size: 2.25rem !important;
+    }
+}
+
+@media only screen and (max-width: 1731px){
+    .font-size-nav{
+        font-size: 1.50rem !important;
+    }
+    .card{
+        font-size: 1.15rem !important;
+    }
+    
+    .card-title{
+        font-size: 1.50rem !important;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .font-size-nav{
+        font-size: 1rem !important;
+    }
+    .img-brand{
+        width: 12% !important;
+    }
+    .nav-link + .nav-link {
+        margin-left: 1.25rem !important;
+    }
+    .card{
+        font-size: 0.75rem !important;
+    }
+    
+    .card-title{
+        font-size: 1.15rem !important;
+    }
+}
+
+@media only screen and (max-width: 938px){
+    .font-size-nav{
+        font-size: 0.75rem !important;
+    }
+    .img-brand{
+        width: 12% !important;
+    }
+    .nav-link + .nav-link {
+        margin-left: 0.80rem !important;
+    }
+    .card{
+        font-size: 0.60rem !important;
+    }
+    
+    .card-title{
+        font-size: 1rem !important;
+    }
+    div.card-footer a.btn{
+        font-size: 0.40rem !important;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .card{
+        font-size: 0.80rem !important;
+    }
+    
+    .card-title{
+        font-size: 1.20rem !important;
+    }
+    div.card-footer a.btn{
+        font-size: 0.70rem !important;
+    }
 }
